@@ -180,8 +180,8 @@ deque <vector<vector<piece>>> convertIntsAndInits(deque<vector<vector<int>>> ini
 				}
 			}
 		}
-		//printGrid(temp);
-		//cout << endl;
+		printGrid(temp);
+		cout << endl;
 		init.push_back(temp);
 	}
 	return init;
@@ -252,8 +252,6 @@ deque<vector<vector<int>>> shiftThrough(deque<vector<vector<int>>> rotations)
 			//cout << "HERES: Cycle Right Change " << change << endl;
 			for (int i = 0; i < 3; i++) {
 				cycleright(temp3, 10, i);
-				//printGrid(temp3);
-				//cout << endl;
 			}
 			possibleOppSetups.push_back(temp3);
 			num2--;
@@ -262,16 +260,15 @@ deque<vector<vector<int>>> shiftThrough(deque<vector<vector<int>>> rotations)
 		//cout << "HERES: Cycle Down Change " << endl;
 		for (int i = 0; i < 3; i++) {
 			cycledown(temp2, 4, i);
-			//printGrid(temp2);
-			//cout << endl;
+
 		}
 		possibleOppSetups.push_back(temp2);
 		while (num3 > 0) {
 			//	cout << "HERES: Cycle Right Change " << change << endl;
 			for (int i = 0; i < 4; i++) {
 				cycleright(temp2, 10, i);
-				//printGrid(temp2);
-				//cout << endl;
+
+
 			}
 			possibleOppSetups.push_back(temp2);
 			num3--;

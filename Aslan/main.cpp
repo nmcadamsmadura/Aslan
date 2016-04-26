@@ -12,12 +12,12 @@
 using namespace std;
 using namespace std::chrono;
 void findAllAndRemove(deque<vector<vector<piece>>> test,int x, int y)
-{
+{	
 	for (int i = 0; i < test.size(); i++)
 	{
 		if (test.at(i)[x][y].guy == 12 | test.at(i)[x][y].guy == 13)
 		{
-			test.erase(remove(test.begin(), test.end(), test.at(i)), test.end());
+			test.erase(test.begin() + i);
 		}
 	}
 
@@ -43,9 +43,8 @@ void genPossibleOpInit()
 	flagRotations = rotate(flagPos2, flagPos2);
 
 
-	//printGrid(testBoard);
-	//cout << flagRotations.size() << endl;
-	/*deque <vector<vector<piece>>> differentSetupsOpp;
+	cout << flagRotations.size() << endl;
+	deque <vector<vector<piece>>> differentSetupsOpp;
 	differentSetupsOpp = convertIntsAndInits(shiftThrough(flagRotations));
 	vector<vector<piece>> exampleSetup(4,vector<piece>(10));
 	Player p2;
@@ -59,7 +58,7 @@ void genPossibleOpInit()
 			l++;
 		}
 
-	}*/
+	}
 	/*while(!differentSetupsOpp.empty() | differentSetupsOpp.size() > 1)
 	{
 		for (int k = 0; k < 4; k++)
@@ -72,8 +71,8 @@ void genPossibleOpInit()
 				}
 			}
 		}
-	}*/
-	//printGrid(differentSetupsOpp.at(0));
+	}
+	printGrid(differentSetupsOpp.at(0));*/
 }
 
 int main()
@@ -81,8 +80,15 @@ int main()
 	//StrategoBoard newBoard;
 	//newBoard.setupBoard();
 	//newBoard.printCurrentBoard();
+	
+	//This function generates all the possible boards that 
+	//the oppenent might have at the start
+	//Then, after a move, if a 12 or 13 is not found (flag or bomb) then delete that flag position from the list.
+	//This primarily uses the functions stored in RotateFunctions.h
+	//genPossibleOpInit();
 
-	system("PAUSE");
+	/* Only for Windows cmd */
+	//system("PAUSE");
 	return 0;
 }
 

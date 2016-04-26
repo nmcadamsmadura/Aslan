@@ -1,4 +1,4 @@
-﻿Build started 4/25/2016 5:12:09 PM.
+﻿Build started 4/26/2016 3:34:00 PM.
      1>Project "C:\Users\Brian\Desktop\Aslan\Aslan\Aslan.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Brian\Desktop\Aslan\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.8.0\build\native\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt /d2notypeopt main.cpp
@@ -9,98 +9,12 @@
      1>c:\users\brian\desktop\aslan\aslan\rotatefunctions.h(198): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
      1>c:\users\brian\desktop\aslan\aslan\main.cpp(16): warning C4018: '<': signed/unsigned mismatch
      1>c:\users\brian\desktop\aslan\aslan\main.cpp(18): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-     1>c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2835): error C2893: Failed to specialize function template 'unknown-type std::equal_to<void>::operator ()(_Ty1 &&,_Ty2 &&) const'
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2835): note: With the following template arguments:
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2835): note: '_Ty1=const piece &'
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2835): note: '_Ty2=const piece &'
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2877): note: see reference to function template instantiation 'bool std::_Equal<_InIt1,_InIt2,_Pr>(_InIt1,_InIt1,_InIt2,_Pr)' being compiled
-                 with
-                 [
-                     _InIt1=const piece *,
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>,
-                     _Pr=std::equal_to<void>
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2900): note: see reference to function template instantiation 'bool std::_Equal2<const piece*,_InIt2,_Pr>(_InIt1,_InIt1,_InIt2,_Pr,std::true_type)' being compiled
-                 with
-                 [
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>,
-                     _Pr=std::equal_to<void>,
-                     _InIt1=const piece *
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2924): note: see reference to function template instantiation 'bool std::equal<_InIt1,_InIt2,std::equal_to<void>>(_InIt1,_InIt1,_InIt2,_Pr)' being compiled
-                 with
-                 [
-                     _InIt1=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>,
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>,
-                     _Pr=std::equal_to<void>
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1833): note: see reference to function template instantiation 'bool std::equal<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>,std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>>(_InIt1,_InIt1,_InIt2)' being compiled
-                 with
-                 [
-                     _InIt1=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>,
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<piece>>>
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstddef(311): note: see reference to function template instantiation 'bool std::operator ==<piece,std::allocator<_Ty>>(const std::vector<_Ty,std::allocator<_Ty>> &,const std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
-                 with
-                 [
-                     _Ty=piece
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2835): note: see reference to function template instantiation 'bool std::equal_to<void>::operator ()<const std::vector<piece,std::allocator<_Ty>>&,const std::vector<_Ty,std::allocator<_Ty>>&>(_Ty1,_Ty2) const' being compiled
-                 with
-                 [
-                     _Ty=piece,
-                     _Ty1=const std::vector<piece,std::allocator<piece>> &,
-                     _Ty2=const std::vector<piece,std::allocator<piece>> &
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2877): note: see reference to function template instantiation 'bool std::_Equal<_InIt1,_InIt2,_Pr>(_InIt1,_InIt1,_InIt2,_Pr)' being compiled
-                 with
-                 [
-                     _InIt1=const std::vector<piece,std::allocator<piece>> *,
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<piece,std::allocator<piece>>>>>,
-                     _Pr=std::equal_to<void>
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2900): note: see reference to function template instantiation 'bool std::_Equal2<const std::vector<piece,std::allocator<_Ty>>,_InIt2,_Pr>(_InIt1,_InIt1,_InIt2,_Pr,std::true_type)' being compiled
-                 with
-                 [
-                     _Ty=piece,
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<piece,std::allocator<piece>>>>>,
-                     _Pr=std::equal_to<void>,
-                     _InIt1=const std::vector<piece,std::allocator<piece>> *
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2924): note: see reference to function template instantiation 'bool std::equal<_InIt1,_InIt2,std::equal_to<void>>(_InIt1,_InIt1,_InIt2,_Pr)' being compiled
-                 with
-                 [
-                     _InIt1=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<piece,std::allocator<piece>>>>>,
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<piece,std::allocator<piece>>>>>,
-                     _Pr=std::equal_to<void>
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector(1833): note: see reference to function template instantiation 'bool std::equal<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<piece,std::allocator<_Ty>>>>>,std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<_Ty,std::allocator<_Ty>>>>>>(_InIt1,_InIt1,_InIt2)' being compiled
-                 with
-                 [
-                     _Ty=piece,
-                     _InIt1=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<piece,std::allocator<piece>>>>>,
-                     _InIt2=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::vector<piece,std::allocator<piece>>>>>
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1789): note: see reference to function template instantiation 'bool std::operator ==<std::vector<piece,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>(const std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &,const std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &)' being compiled
-                 with
-                 [
-                     _Ty=piece
-                 ]
-         c:\program files (x86)\microsoft visual studio 14.0\vc\include\algorithm(1803): note: see reference to function template instantiation '_FwdIt std::_Remove<std::_Deque_unchecked_iterator<_Mydeque>,_Ty>(_FwdIt,_FwdIt,const _Ty &)' being compiled
-                 with
-                 [
-                     _FwdIt=std::_Deque_unchecked_iterator<std::_Deque_val<std::_Deque_simple_types<std::vector<std::vector<piece,std::allocator<piece>>,std::allocator<std::vector<piece,std::allocator<piece>>>>>>>,
-                     _Mydeque=std::_Deque_val<std::_Deque_simple_types<std::vector<std::vector<piece,std::allocator<piece>>,std::allocator<std::vector<piece,std::allocator<piece>>>>>>,
-                     _Ty=std::vector<std::vector<piece,std::allocator<piece>>,std::allocator<std::vector<piece,std::allocator<piece>>>>
-                 ]
-         c:\users\brian\desktop\aslan\aslan\main.cpp(20): note: see reference to function template instantiation '_FwdIt std::remove<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<std::vector<std::vector<piece,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>>>,std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>>(_FwdIt,_FwdIt,const std::vector<std::vector<_Ty,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>> &)' being compiled
-                 with
-                 [
-                     _FwdIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<std::vector<std::vector<piece,std::allocator<piece>>,std::allocator<std::vector<piece,std::allocator<piece>>>>>>>,
-                     _Ty=piece
-                 ]
-     1>Done Building Project "C:\Users\Brian\Desktop\Aslan\Aslan\Aslan.vcxproj" (Build target(s)) -- FAILED.
+     1>c:\users\brian\desktop\aslan\aslan\piece.h(73): warning C4715: 'operator<<': not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Brian\Desktop\Aslan\Debug\Aslan.exe" /INCREMENTAL /NOLOGO "C:\Users\Brian\Desktop\Aslan\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.8.0\build\native\..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x86\Debug\cpprest140d_2_8.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Brian\Desktop\Aslan\Debug\Aslan.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Brian\Desktop\Aslan\Debug\Aslan.lib" /MACHINE:X86 Debug\main.obj
+         Aslan.vcxproj -> C:\Users\Brian\Desktop\Aslan\Debug\Aslan.exe
+     1>Done Building Project "C:\Users\Brian\Desktop\Aslan\Aslan\Aslan.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.03
+Time Elapsed 00:00:01.93

@@ -64,10 +64,8 @@ public:
 		}
 		cout << endl;
 	}
-	void setupBoard()
+	void setupBoard(Player p1, Player p2)
 	{
-		Player p1;
-		Player p2;
 		int j = 0;
 		for (int i = 3; i >= 0; i--)
 		{
