@@ -17,6 +17,15 @@ public:
 	Guy guy;
 	Color col;
 	bool moved;
+	int pos[2];
+	piece(Guy g, Color c,int x,int y)
+	{
+		moved = false;
+		guy = g;
+		col = c;
+		pos[0] = x;
+		pos[1] = y;
+	}
 	piece(Guy g, Color c)
 	{
 		moved = false;
@@ -32,19 +41,18 @@ public:
 	{
 
 	}
-
 	friend ostream& operator<<(ostream &os, const piece& pc);
 };
 ostream& operator<<(ostream& os, const piece& pc)
 {
 	if (pc.guy > 1 & pc.guy != 13 & pc.guy != 12)
 	{
-		pc.col == 0 ? os << "RP" : os << "B" << pc.guy;
+		pc.col == 0 ? os << "R" << pc.guy : os << "B" << pc.guy;
 		return os;
 	}
 	else if (pc.guy == 0)
 	{
-		os << "SP";
+		os << "0";
 		return os;
 	}
 	else if (pc.guy == 1)
@@ -54,12 +62,12 @@ ostream& operator<<(ostream& os, const piece& pc)
 	}
 	else if (pc.guy == 12)
 	{
-		pc.col == 0 ? os << "RP" : os << "BM";
+		os << "BM";
 		return os;
 	}
 	else if (pc.guy == 13)
 	{
-		pc.col == 0 ? os << "RP" : os << "F";
+		os << "F";
 		return os;
 	}
 }

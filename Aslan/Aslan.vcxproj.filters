@@ -32,5 +32,8 @@
     <ClInclude Include="Piece.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="RotateFunctions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

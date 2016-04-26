@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Piece.h" />
+    <ClInclude Include="RotateFunctions.h" />
     <ClInclude Include="StrategoBoard.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>

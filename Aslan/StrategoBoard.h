@@ -1,6 +1,7 @@
 #pragma once
 #include "Piece.h"
 #include<iomanip>
+#include "Player.h"
 using namespace std;
 class StrategoBoard
 {
@@ -27,7 +28,7 @@ public:
 		board[5][6] = new piece(water);
 		board[5][7] = new piece(water);
 	}
-	int * makeMove(Player p, int x, int y)
+	int * makeMove(Player p,piece * pc, int x, int y)
 	{
 		int * move;
 		if (!p.isAI)
@@ -35,6 +36,12 @@ public:
 			cout << "Do you wish to move Player " << p.isAI << " to position " << x << "," << y << "?" << endl;
 			move[0] = x;
 			move[1] = y;
+			pc->moved = true;
+			board[move[0]][move[1]] = pc;
+			board[pc->pos[0]][pc->pos[1]] = new piece(Guy(space));
+			pc->pos[0] = move[0];
+			pc->pos[1] = move[1];
+
 		}
 		else
 		{
@@ -68,7 +75,7 @@ public:
 			{
 				if (j == 40) break;
 				//cout << guys[p.pces[k*j]] << endl;
-				board[i][k] = new piece(Guy(p1.pces[j]), blue);
+				board[i][k] = new piece(Guy(p1.pces[j]), blue,i,k);
 				j++;
 			}
 
@@ -80,7 +87,7 @@ public:
 			{
 				if (l == 40) break;
 				//cout << guys[p.pces[k*j]] << endl;
-				board[i][k] = new piece(Guy(p2.pces[l]), red);
+				board[i][k] = new piece(Guy(p1.pces[l]), red);
 				l++;
 			}
 
